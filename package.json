@@ -5,6 +5,7 @@
     "author": "Andrew Hillier <andrew.hillier09@gmail.com>",
     "license": "MIT",
     "main": "dist/index.js",
+    "repository": "git@github.com:andrew09/enzyme-get-wrapper.git",
     "scripts": {
         "test": "jest --env=jsdom",
         "build": "parcel build src/index.js"
