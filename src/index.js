@@ -11,5 +11,5 @@ export default (...rest) => {
     if (!isValidEnzymePackage(enzyme))
         throw 'The provided Enzyme package is not valid.';
 
-    getWrapper(enzyme, ...rest);
+    return getWrapper(enzyme, ...rest);
 };
