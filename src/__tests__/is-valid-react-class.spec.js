@@ -36,7 +36,7 @@ describe('isValidReactClass', () => {
         expect(isValidReactClass('')).toBe(false);
     });
 
-    it('should return false if given an object', () => {
+    it('should return false if given an empty object', () => {
         // Assert
         expect(isValidReactClass({})).toBe(false);
     });

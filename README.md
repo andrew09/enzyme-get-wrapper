@@ -14,6 +14,22 @@ OR
 
 `npm install enzyme-get-wrapper -D`
 
+`Enzyme` is also a required package for this to work. See installation guide here: http://airbnb.io/enzyme/docs/installation/index.html
+
+## Configuration
+
+In order to use Enzyme with modern versions of React, you need to install an adapter. That is outlined in the above installation guide. `enzyme-get-wrapper` needs to be configured with your version of Enzyme. Here is an example of a Jest test setup file:
+
+```javascript
+import enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+import { configure } from './enzyme-get-wrapper';
+
+enzyme.configure({ adapter: new Adapter() });
+configure(enzyme);
+```
+
 ## Usage
 
 ```javascript
