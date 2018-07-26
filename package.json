@@ -1,6 +1,6 @@
 {
     "name": "enzyme-get-wrapper",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A tool for creating flexible Enzyme wrappers with less code.",
     "author": "Andrew Hillier <andrew.hillier09@gmail.com>",
     "license": "MIT",
@@ -21,7 +21,6 @@
         ]
     },
     "dependencies": {
-        "enzyme": "^3.3.0",
         "react": "^16.4.1",
         "react-dom": "^16.4.1"
     },
@@ -30,11 +29,12 @@
         "babel-jest": "^23.4.0",
         "babel-preset-react-app": "^3.1.1",
         "babel-runtime": "^6.23.0",
+        "enzyme": "^3.3.0",
         "enzyme-adapter-react-16": "^1.1.1",
         "eslint": "^4.0.0",
         "eslint-plugin-jsx-a11y": "5.1.1",
         "eslint-plugin-react": "7.4.0",
-        "jest": "20.0.4",
+        "jest-cli": "^23.4.1",
         "parcel-bundler": "^1.9.7",
         "prettier": "^1.13.7",
         "raf": "3.4.0"

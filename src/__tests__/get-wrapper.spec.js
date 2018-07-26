@@ -1,12 +1,13 @@
 import React from 'react';
+import enzyme from 'enzyme';
 
 import getWrapper from '../get-wrapper';
 
 describe('getWrapper', () => {
-    it('should be a function of arity 1', () => {
+    it('should be a function of arity 2', () => {
         // Assert
         expect(getWrapper).toBeInstanceOf(Function);
-        expect(getWrapper).toHaveLength(1);
+        expect(getWrapper).toHaveLength(2);
     });
 
     it('should throw if not given a react class', () => {
@@ -25,6 +26,6 @@ describe('getWrapper', () => {
         };
 
         // Assert
-        expect(getWrapper(ReactClass)).toBeInstanceOf(Function);
+        expect(getWrapper(enzyme, ReactClass)).toBeInstanceOf(Function);
     });
 });

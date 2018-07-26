@@ -1,9 +1,9 @@
-import { render, shallow, mount } from 'enzyme';
+export default ({ render, shallow, mount }, depth) => {
+    const depths = {
+        render,
+        shallow,
+        mount,
+    };
 
-const DEPTHS = {
-    render,
-    shallow,
-    mount,
+    return depths[depth] || mount;
 };
-
-export default depth => DEPTHS[depth] || mount;
