@@ -1,8 +1,11 @@
 import 'raf/polyfill';
-import { configure } from 'enzyme';
+import enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
-configure({ adapter: new Adapter() });
+import { configure } from './src';
+
+enzyme.configure({ adapter: new Adapter() });
+configure(enzyme);
 
 window.requestAnimationFrame = function(callback) {
     setTimeout(callback, 0);
